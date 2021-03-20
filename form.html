@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB FORMS</title>
+    <style>
+        body {
+            background-color: darkgrey;
+        }
+        h1{
+            text-align: left;
+            background-color: green;
+            text-shadow: maroon;
+            text-underline-position: below;
+        }
+        h2{
+
+        }
+        
+        section {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <form action="">
+            <h1>Payment Form by UV</h1>
+            <h2>Contact information</h2>
+            <p>Required field followed by *</p>
+            <p>Name: * <input type="text" name="name" required></p>
+            <fieldset>
+                <legend>Gender *</legend>
+                <p>
+                    Male <input type="radio" name="gender" id="gender"> Female <input type="radio" name="gender" id="gender">
+                </p>
+            </fieldset>
+            <p>Address<textarea name="address" id="address" cols="50" rows="12"></textarea></p>
+            <p>E-mail *<input type="email" name="email" id="email" required></p>
+            <p>Pincode *<input type="number" name="pincode" id="pincode" required></p>
+
+            <h2>Payment Information</h2>
+            <p>
+                Card Type: *
+                <select name="cardType" id="cardType" required>
+                <option value="">--Select a card type--</option>
+                <option value="VISA">VISA</option>
+                <option value="RUPAY">RUPAY</option>
+                <option value="MASTER">MASTER</option>
+                <option value="GLOBAL">GLOBAL</option>
+            </select>
+            </p>
+            <p>Card Number:<input type="number" name="cardNumber" id="cardNumber"> </p>
+            <p>Expiration Date:<input type="date" name="date" id="date"></p>
+            <p>CVV<input type="password" name="hidden"></p>
+    </section>
+
+
+    <input type="submit" value="paynow">
+    <input type="reset">
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+</body>
+
+</html>
